@@ -1,4 +1,3 @@
-
 const canvas = document.getElementById('snake');
 const context = canvas.getContext('2d');
 context.scale(20,20);
@@ -74,7 +73,6 @@ function snakeChanger(){
 	let A = snake.pos.x;
 	let B = snake.pos.y;
 	let direction = snake.dir;
-
 	init.pop();
 	init.unshift({x:A,y:B, dir:direction});	
 }
@@ -122,13 +120,9 @@ function acceleration(){
 // Snake colliding handlers
 function snakeCollide(){
 	let checkarr = init.slice();
-
 	let first = checkarr.splice(0,1);
-	
 	checkarr.splice(0,1);
-	
 	for (let i = 0; i<checkarr.length;i++){
-		
 		if (first[0].x == checkarr[i].x && first[0].y == checkarr[i].y){
 			alert('You loose! Your score is '+snake.score+' ! Nicely done!');
 			resetSnake();
@@ -171,8 +165,7 @@ document.addEventListener('keydown', event => {
 			dropCounter = 0;
 			moveSnake();
 		}
-	} 
-	
+	} 	
 });
 //Variables of snake
 const snake = {
