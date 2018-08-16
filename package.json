@@ -1,0 +1,9 @@
+{
+  "name": "basic_snake",
+  "version": "0.1.0",
+  "description": "Basic snake game made using HTML5 Canvas and JS",
+  "keywords": [
+    "snake", "HTML5", "Canvas", "JS", "basic"
+  ]
+ 
+}
